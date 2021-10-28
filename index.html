@@ -21,9 +21,8 @@
     "data": {"url": "building_inventory.csv", "format":{"type": "csv"}},
     "mark": "bar",
     "encoding": {
-        "x": {"field": "Usage Description", "type": "quantitative", "bin": true},
-        "y": {"aggregate": "count", "type": "quantitative"},
-            "scale": {"type": "log"}
+        "x": {"field": "Congress Dist", "type": "quantitative"},
+        "y": {"field": "sum_square_footage", "type": "quantitative"}
         }
 };
         vegaEmbed('#myviz', mySpec);
