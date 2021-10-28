@@ -19,10 +19,10 @@
         mySpec = {
     "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
     "data": {"url": "building_inventory.csv", "format":{"type": "csv"}},
-    "mark": "bar",
+    "mark": "point",
     "encoding": {
-        "x": {"field": "Congress Dist", "type": "quantitative"},
-        "y": {"field": "sum_square_footage", "type": "quantitative"}
+        "x": {"field": "Year Constructed", "type": "quantitative"},
+        "y": {"field": "Year Acquired", "type": "quantitative"}
         }
 };
         vegaEmbed('#myviz', mySpec);
